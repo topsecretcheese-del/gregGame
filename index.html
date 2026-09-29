@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greg Game</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #1b1b2f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
+    }
+    canvas {
+      image-rendering: pixelated;
+      width: min(100vw, calc(100vh * 800 / 480));
+      height: auto;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="800" height="480"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
